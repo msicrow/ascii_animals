@@ -1,3 +1,5 @@
+"""Program to 'monitor' ascii animals and their status"""
+
 camel = r"""
 Switching on camera from habitat with camels...
  ___.-''''-.
@@ -119,10 +121,9 @@ Switching on camera from habitat with rabbits...
 (" ~----( ~   Y.  )
 It seems there will be more rabbits soon!"""
 
-
 animals = [camel, lion, deer, goose, bat, rabbit]
-
 camera_num = input("Which habitat # do you need?")
+
 while camera_num != "exit":
     print(animals[int(camera_num)])
     camera_num = input("Which habitat # do you need?")
